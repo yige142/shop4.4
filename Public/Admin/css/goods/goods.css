@@ -1,0 +1,5 @@
+/*这样写可以让datagrid view 的+号  跟右边显示的数据对齐*/
+.datagrid-row{
+    height:28px !important;
+}
+

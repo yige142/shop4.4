@@ -1,0 +1,17 @@
+.good_fresh{
+    /*background-color: #00a2d4;*/
+    height: 1420px;
+    max-height: 1420px;
+
+}
+
+/*分页*/
+.paging{
+    width: 235px;
+    height: 70px;
+    margin-top: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: #1f637b;*/
+
+}

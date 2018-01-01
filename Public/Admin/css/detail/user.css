@@ -1,0 +1,23 @@
+.user_menu{
+    width: 1300px;
+    margin: auto;
+    height: 450px;
+    /*background-color: #00ee00;*/
+}
+.sidebar{
+    margin-left: 150px;
+    width: 210px;
+    height:400px;
+    float: left;
+    /*background-color: #00b7ee;*/
+}
+.main{
+    margin-left: 370px;
+    width: 800px;
+    height:400px;
+    /*background-color: #00b7ee;*/
+}
+
+a {
+    background-color: transparent;
+}

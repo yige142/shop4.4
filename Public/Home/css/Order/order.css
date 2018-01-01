@@ -1,0 +1,25 @@
+.main_title{
+    padding-top: 10px;
+    hight:60px;
+    width: auto;
+    font-size: 16px;
+    margin-bottom: 20px;
+    /*background-color: #00b7ee;*/
+}
+
+/*表单列表显示区域*/
+.baseInfo_area{
+    /*background-color: #00ee00;*/
+    min-width: 800px;
+    width:900px;
+    min-height: 350px;
+    height:auto;
+}
+.user_menu{
+    height:auto;
+}
+
+/*这样写可以让datagrid view 的+号  跟右边显示的数据对齐*/
+.datagrid-row{
+    height:28px !important;
+}

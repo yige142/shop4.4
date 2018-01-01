@@ -1,0 +1,35 @@
+tbody{
+    width: auto;
+    height: auto;
+    /*background-color: #00a2d4;*/
+}
+
+.return_goods_name{
+    margin: auto;
+    width: 70%;
+    height: 110px;
+    font-size: 1.2em;
+    /*background-color: #0e0e0e;*/
+}
+
+.goods_name{
+    padding-top: 8%;
+}
+
+.return_order_sn{
+    padding: 5px 0 0 0;
+    font-size: 1.2em;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    /*background-color: #1f6377;*/
+}
+textarea{
+    width: 80%;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    resize: none;
+    /*padding: 10px;*/
+}

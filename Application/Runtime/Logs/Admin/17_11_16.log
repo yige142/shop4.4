@@ -1,0 +1,974 @@
+[ 2017-11-16T10:15:00+08:00 ] ::1 /shop3.2/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_auth_group_access` [ RunTime:0.1309s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM shop_auth_group_access a INNER JOIN shop_auth_group g on a.group_id=g.id  WHERE ( a.uid='13' and g.status='1' )  [ RunTime:0.0381s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.206055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.206055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-11-16T10:15:04+08:00 ] ::1 /shop3.2/Admin/Goods/index?_=1510798500443
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-11-16T10:15:05+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0059s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_recommend`,`goods_competitive`,`goods_status`,`new_product`,`goods_stock`,`goods_info`,`hot_cakes`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-11-16T10:15:05+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0059s ]
+SQL: SELECT `goods_status` FROM `shop_goods` GROUP BY goods_status  [ RunTime:0.0586s ]
+
+[ 2017-11-16T10:15:09+08:00 ] ::1 /shop3.2/Admin/Order/index?_=1510798500449
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-11-16T10:15:09+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0449s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-11-16T10:15:09+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0049s ]
+SQL: SELECT shop_order.order_status FROM `shop_order` GROUP BY shop_order.order_status  [ RunTime:0.0020s ]
+
+[ 2017-11-16T10:15:09+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0049s ]
+SQL: SELECT shop_order.order_cancel FROM `shop_order` GROUP BY shop_order.order_cancel  [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:16:00+08:00 ] ::1 /shop3.2/Admin/Order/index?_=1510798500452
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-11-16T10:16:00+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0078s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:16:00+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_status FROM `shop_order` GROUP BY shop_order.order_status  [ RunTime:0.0020s ]
+
+[ 2017-11-16T10:16:00+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_cancel FROM `shop_order` GROUP BY shop_order.order_cancel  [ RunTime:0.0020s ]
+
+[ 2017-11-16T10:16:04+08:00 ] ::1 /shop3.2/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_auth_group_access` [ RunTime:0.0049s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM shop_auth_group_access a INNER JOIN shop_auth_group g on a.group_id=g.id  WHERE ( a.uid='13' and g.status='1' )  [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-11-16T10:16:06+08:00 ] ::1 /shop3.2/Admin/Order/index?_=1510798564345
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-11-16T10:16:07+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:16:07+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_status FROM `shop_order` GROUP BY shop_order.order_status  [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:16:07+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0049s ]
+SQL: SELECT shop_order.order_cancel FROM `shop_order` GROUP BY shop_order.order_cancel  [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:16:21+08:00 ] ::1 /shop3.2/Admin/Order/index?_=1510798564348
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-11-16T10:16:21+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0547s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:16:21+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.order_status FROM `shop_order` GROUP BY shop_order.order_status  [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:16:21+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_cancel FROM `shop_order` GROUP BY shop_order.order_cancel  [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:16:24+08:00 ] ::1 /shop3.2/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_auth_group_access` [ RunTime:0.0049s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM shop_auth_group_access a INNER JOIN shop_auth_group g on a.group_id=g.id  WHERE ( a.uid='13' and g.status='1' )  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-11-16T10:16:26+08:00 ] ::1 /shop3.2/Admin/Goods/index?_=1510798585040
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-11-16T10:16:26+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0049s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_recommend`,`goods_competitive`,`goods_status`,`new_product`,`goods_stock`,`goods_info`,`hot_cakes`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:16:27+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0049s ]
+SQL: SELECT `goods_status` FROM `shop_goods` GROUP BY goods_status  [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:16:30+08:00 ] ::1 /shop3.2/Admin/Order/index?_=1510798585046
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-11-16T10:16:30+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:16:30+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_status FROM `shop_order` GROUP BY shop_order.order_status  [ RunTime:0.0020s ]
+
+[ 2017-11-16T10:16:30+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_cancel FROM `shop_order` GROUP BY shop_order.order_cancel  [ RunTime:0.0020s ]
+
+[ 2017-11-16T10:17:09+08:00 ] ::1 /shop3.2/Admin/Order/index?_=1510798585049
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-11-16T10:17:09+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:17:09+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_status FROM `shop_order` GROUP BY shop_order.order_status  [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:17:10+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_cancel FROM `shop_order` GROUP BY shop_order.order_cancel  [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:17:37+08:00 ] ::1 /shop3.2/Admin/Order/index?_=1510798585052
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-11-16T10:17:37+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-11-16T10:17:37+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_status FROM `shop_order` GROUP BY shop_order.order_status  [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:17:37+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_cancel FROM `shop_order` GROUP BY shop_order.order_cancel  [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:28:34+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE (  shop_order.order_name LIKE '%zx%' OR shop_order.orderSn LIKE '%zx%' ) ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-11-16T10:28:39+08:00 ] ::1 /shop3.2/Admin/Order/receive
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: UPDATE `shop_order` SET `order_status`='已受理' WHERE `orderId` = 26 [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-11-16T10:28:39+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE (  shop_order.order_name LIKE '%zx%' OR shop_order.orderSn LIKE '%zx%' ) ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:50:49+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE (  shop_order.order_name LIKE '%zx%' OR shop_order.orderSn LIKE '%zx%' ) ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:50:58+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0088s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_recommend`,`goods_competitive`,`goods_status`,`new_product`,`goods_stock`,`goods_info`,`hot_cakes`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:51:23+08:00 ] ::1 /shop3.2/Admin/Order/receive
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: UPDATE `shop_order` SET `order_status`='已受理' WHERE `orderId` = 24 [ RunTime:0.0332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-11-16T10:51:23+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE (  shop_order.order_name LIKE '%zx%' OR shop_order.orderSn LIKE '%zx%' ) ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-11-16T10:51:38+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE (  shop_order.order_name LIKE '%zx%' OR shop_order.orderSn LIKE '%zx%' ) ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:51:44+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0059s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_recommend`,`goods_competitive`,`goods_status`,`new_product`,`goods_stock`,`goods_info`,`hot_cakes`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:51:49+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0088s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_recommend`,`goods_competitive`,`goods_status`,`new_product`,`goods_stock`,`goods_info`,`hot_cakes`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:52:29+08:00 ] ::1 /shop3.2/Admin/Order/receive
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: UPDATE `shop_order` SET `order_status`='已受理' WHERE `orderId` = 22 [ RunTime:0.0361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-11-16T10:52:29+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0049s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE (  shop_order.order_name LIKE '%zx%' OR shop_order.orderSn LIKE '%zx%' ) ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-11-16T10:52:43+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0059s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_recommend`,`goods_competitive`,`goods_status`,`new_product`,`goods_stock`,`goods_info`,`hot_cakes`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T10:56:27+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE (  shop_order.order_name LIKE '%63b%' OR shop_order.orderSn LIKE '%63b%' ) ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T11:01:23+08:00 ] ::1 /shop3.2/Admin/Order/receive
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: UPDATE `shop_order` SET `order_status`='已受理' WHERE `orderId` = 7 [ RunTime:0.0322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-11-16T11:01:23+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0049s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE (  shop_order.order_name LIKE '%63b%' OR shop_order.orderSn LIKE '%63b%' ) ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T11:20:46+08:00 ] ::1 /shop3.2/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_auth_group_access` [ RunTime:0.0049s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM shop_auth_group_access a INNER JOIN shop_auth_group g on a.group_id=g.id  WHERE ( a.uid='13' and g.status='1' )  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-11-16T11:20:49+08:00 ] ::1 /shop3.2/Admin/Goods/index?_=1510802446992
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-11-16T11:20:49+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_recommend`,`goods_competitive`,`goods_status`,`new_product`,`goods_stock`,`goods_info`,`hot_cakes`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T11:20:49+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goods_status` FROM `shop_goods` GROUP BY goods_status  [ RunTime:0.0010s ]
+
+[ 2017-11-16T11:20:52+08:00 ] ::1 /shop3.2/Admin/Order/index?_=1510802446998
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-11-16T11:20:53+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T11:20:53+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.order_status FROM `shop_order` GROUP BY shop_order.order_status  [ RunTime:0.0010s ]
+
+[ 2017-11-16T11:20:53+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0049s ]
+SQL: SELECT shop_order.order_cancel FROM `shop_order` GROUP BY shop_order.order_cancel  [ RunTime:0.0010s ]
+
+[ 2017-11-16T11:21:01+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE (  shop_order.order_name LIKE '%149%' OR shop_order.orderSn LIKE '%149%' ) ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-11-16T11:37:48+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0088s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-11-16T11:37:48+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0049s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T11:38:04+08:00 ] ::1 /shop3.2/Admin/Order/receive
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: UPDATE `shop_order` SET `order_status`='已受理' WHERE `orderId` = 15 [ RunTime:0.0352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-11-16T11:38:04+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0078s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T12:16:49+08:00 ] ::1 /shop3.2/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shop_auth_group_access` [ RunTime:0.0059s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM shop_auth_group_access a INNER JOIN shop_auth_group g on a.group_id=g.id  WHERE ( a.uid='13' and g.status='1' )  [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-11-16T12:16:51+08:00 ] ::1 /shop3.2/Admin/Goods/index?_=1510805809866
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-11-16T12:16:51+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0059s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_recommend`,`goods_competitive`,`goods_status`,`new_product`,`goods_stock`,`goods_info`,`hot_cakes`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-11-16T12:16:51+08:00 ] ::1 /shop3.2/Admin/Goods/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goods_status` FROM `shop_goods` GROUP BY goods_status  [ RunTime:0.0010s ]
+
+[ 2017-11-16T12:16:56+08:00 ] ::1 /shop3.2/Admin/Order/index?_=1510805809872
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-11-16T12:16:56+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_info,shop_goods.goods_name,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-16T12:16:56+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_status FROM `shop_order` GROUP BY shop_order.order_status  [ RunTime:0.0020s ]
+
+[ 2017-11-16T12:16:56+08:00 ] ::1 /shop3.2/Admin/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.order_cancel FROM `shop_order` GROUP BY shop_order.order_cancel  [ RunTime:0.0020s ]
+

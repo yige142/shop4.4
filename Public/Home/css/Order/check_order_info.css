@@ -1,0 +1,192 @@
+/*填写核对信息大区域*/
+.check_order_info_area{
+    width: 1300px;
+    height: auto;
+    margin: auto;
+    /*background-color:#dbdbdb;*/
+}
+
+/*填写核对订单标题*/
+.title_area{
+    margin: auto;
+    text-align: center;
+}
+
+/*选择地址区域*/
+.info_area{
+    width: auto;
+    height:auto;
+    /*background-color: #dbdbdb;*/
+}
+/*收货人信息 title*/
+.info_area_title{
+    padding-top: 5px;
+    padding-left:15px;
+}
+/*easyui 地址表格高度显示高一点*/
+.datagrid-wrap{
+    height:240px !important;
+}
+/*easyui opt 选择地址、增加地址样式*/
+/*.tool-opt {*/
+    /*margin-left: 15px;*/
+/*}*/
+/*支付方式大区域*/
+.payment_type_area{
+    width: auto;
+    height:auto;
+    /*background-color: #dbdbdb;*/
+}
+/*支付方式 title*/
+.payment_type_title{
+    padding-left:15px;
+}
+/*支付方式combbox字段*/
+.payment_type_text{
+    margin-left: 15px;
+}
+/*备注区域*/
+.remark_area{
+    width: auto;
+    height:auto;
+    /*background-color: #c4e3f3;*/
+}
+
+
+
+/*订单商品显示区域*/
+.goods_area{
+    padding-top: 21px;
+    width: auto;
+    height:auto;
+    /*background-color: #1f6377;*/
+}
+/*order_info_title 订单确认信息title*/
+.order_info_title{
+    margin-left: 15px;
+}
+/*商品显示table */
+.goods_table{
+    margin-left: 15px;
+    width: 1200px;
+    height:auto;
+    /*background-color: #9a9afb;*/
+}
+.td{
+    text-align: center;
+}
+/*商品图片显示*/
+.goods_img{
+    width: 150px;
+    height:150px;
+    float: left;
+    clear: right;
+    /*background-color: #00a2d4;*/
+}
+/*商品文字说明*/
+.goods_text{
+    margin-top: 45px;
+    float:left ;
+    width:330px;
+    height: auto;
+    /*background-color: #00ee00;*/
+    padding-left: 15px;
+    padding: auto;
+}
+/*商品小计字段*/
+.subtotal{
+    width: 180px;
+    text-align: right;
+    color: red;
+    font-weight:bold;
+    font-size: 18px;
+}
+/*商品运费字段*/
+.freight{
+    width: 180px;
+    /*background-color: #00ee00;*/
+    text-align: center;
+}
+.freight_price{
+    width: 180px;
+    text-align: right;
+    color: red;
+    font-weight:bold;
+    font-size: 18px;
+}
+/*商品小计字段区域*/
+.shop_total{
+    float: right;
+}
+/*商品小计数字*/
+.shop_total_num{
+    width: 180px;
+    /*background-color: #0e0e0e;;*/
+    text-align: right;
+    color: red;
+    font-weight:bold;
+    font-size: 25px;
+}
+
+/*框住地址信息区域*/
+.area_show_info{
+    border: 1px solid #ff0036 ;
+}
+
+/*实际付款字段区域*/
+.payment_area{
+    height: 50px;
+    /*background-color: #2a85a0;*/
+}
+
+.payment_text{
+    float: right;
+    margin-top: 15px;
+  /*background-color: #ffffff;*/
+}
+/*实际付款文字加粗*/
+.payment_text_text{
+    font-weight: bold;
+}
+/*寄送至 字段*/
+.send_area_text_text{
+    font-weight: bold;
+}
+/*收件人字段*/
+.addressee_text{
+    font-weight: bold;
+}
+
+/*实际付款 数字字段*/
+.payment_number{
+    color: red;
+    font-weight:bold;
+    font-size: 25px;
+}
+/*寄送至 字段区域*/
+.send_area{
+    height:35px;
+    /*background-color: #6b9cde;*/
+}
+.send_area_text{
+   text-align: right;
+   padding: 5px 5px 0 0;
+
+}
+
+/*确认提交按钮区域*/
+.submit_button_area{
+    /*background-color: #00ee00;*/
+    height: 32px;
+    text-align: center;;
+}
+/*确认按钮样式调整*/
+#order_submit{
+    width: 180px;
+    height:32px;
+    color: #ffffff;
+    border: 1px solid #ff0036;
+    background:url("../../img/order_s_b.png") ;
+}
+
+.tr{border-bottom:1px #ddd solid;}

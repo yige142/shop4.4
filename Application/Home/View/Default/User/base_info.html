@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<block name="head">
+    <head>
+        <meta charset="UTF-8">
+        <title>商城首页</title>
+        <link href="__CSS__/index.css" rel="stylesheet" type="text/css">
+        <link href="__CSS__/user.css" rel="stylesheet" type="text/css">
+        <link href="__CSS__/user/base_info.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="__PUBLIC__/easyui/themes/bootstrap/easyui.css">
+        <link rel="stylesheet" href="__PUBLIC__/easyui/themes/icon.css">
+        <!--滚动图片CSS-->
+        <link href="__CSS__/lunbo.css" rel="stylesheet" type="text/css" />
+        <!--加载Bootstrap的CSS   __PUBLIC__在Home->Config中配置-->
+        <link href="__PUBLIC__/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <script src="__JS__/jquery-3.2.1.min.js"></script>
+        <script src="__PUBLIC__/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript">
+            var ThinkPhP={
+                'MODULE':'__MODULE__',
+                'IMG':'__IMG__',
+                'INDEX':'{:U("Index/index")}'
+            };
+        </script>
+    </head>
+</block>
+<body>
+<block name="top">
+    <!--头部 显示标题-->
+    <div class="top">
+        <div class="top_header">
+            <div class="top_header_left glyphicon glyphicon-plane">深圳-满百包邮(环郊内)-星夜达
+            </div>
+
+            <if condition="session('admin')">
+                <div class="top_header_right">
+                    <ul class="list_inline">
+                        <li><a href="{:U('Index/logout')}">[退出]</a></li>
+                        <li>您好:<a href="{:U('Order/order')}">{:session('admin')['accounts']}</a></li>
+                    </ul>
+                </div>
+                <else />
+                <div class="top_header_right">
+                    <ul class="list_inline">
+                        <li><a href="{:U('Index/login')}">[登录]</a></li>
+                    </ul>
+                </div>
+            </if>
+
+
+
+        </div>
+        <!--导航分类-->
+        <div class="top_content">
+            <nav class="navbar " role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="__IMG__/logo3.png"></a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li ><a href="{:U('Index/index')}" ><h4 class="glyphicon glyphicon-home">首页</h4></a></li>
+                            <li><a href="{:U('Goods/goods_fruit_list')}"><h4 class="glyphicon glyphicon-tree-deciduous">鲜果</h4></a></li>
+                            <li ><a href="{:U('Goods/goods_fresh_list')}"><h4 class="glyphicon glyphicon-cutlery">生鲜</h4></a></li>
+                            <li><a href="javascript:void(0)" id="gift"><h4 class="glyphicon glyphicon-heart-empty">礼品</h4></a></li>
+                            <li><a href="javascript:void(0)" id="vip"><h4 class="vip">VIP会员中心</h4></a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-right">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+					<span class="input-group-btn">
+						<button class="btn btn-info " type="button">
+                            <span class="glyphicon glyphicon-search"></span> 搜索
+                        </button>
+					</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</block>
+
+<!--用户菜单-->
+<!--<?php-->
+<!--var_dump($object);-->
+<!--?>-->
+<div class="user_menu">
+    <hr/>
+    <div class="sidebar">
+        <ul class="list-group">
+            <!--<a href="{:U('User/user')}" ><li class="list-group-item">我的账户</li></a>-->
+            <a href="{:U('Order/order')}"><li class="list-group-item">我的订单</li></a>
+            <!--<a href="#"><li class="list-group-item">账户余额</li></a>-->
+            <a href="{:U('User/base_info')}"><li class="list-group-item">基本资料</li></a>
+            <a href="{:U('User/password')}"><li class="list-group-item">密码修改</li></a>
+            <a href="{:U('User/shipping_address')}"><li class="list-group-item">收货地址</li></a>
+
+        </ul>
+    </div>
+    <div class="main">
+        <div class="main_title">基本资料:</div>
+        <hr/>
+        <div class="baseInfo_area">
+
+                <table id="base_info">
+                  <input type="hidden" id="User_id" value="{:session('admin')['id']}" >
+                    <input type="hidden" id="base_info_id" name="id" >
+                    <!--<tr>-->
+                        <!--<td>当前头像：</td>-->
+                        <!--<td><input type="file"></td>-->
+                    <!--</tr>-->
+                    <tr class="table_raw">
+                        <td>昵称:</td>
+                        <td><input type="text" id="nickname" value="{:session('admin')['accounts']}" ></td>
+                    </tr>
+                    <tr class="table_raw">
+                        <td>
+                            性别:
+                        </td>
+                        <td name="input">
+                            <a href="javascript:void(0)" id="staff-add-gender-1" name="staff-add-gender" class="easyui-linkbutton">男</a>
+                            <a href="javascript:void(0)" id="staff-add-gender-2" name="staff-add-gender" >女</a>
+                            <input type="hidden" id="staff-add-gender" value="男" name="sex">
+                        </td>
+                    </tr>
+                    <tr class="table_raw">
+                        <td>
+                            生日:
+                        </td>
+                        <td>
+                            <input type="text" id="birthday" name="birthday">
+                        </td>
+                    </tr>
+                    <tr class="table_raw">
+                        <td>手机 {$object.phone}</td>
+                        <td><input type="text" class="phone" id="phone" name="phone"></td>
+                    </tr>
+                    <tr class="table_raw">
+                        <td>邮箱</td>
+                        <td><input type="text" class="email" id="email" name="email"></td>
+                    </tr>
+                    <tr class="table_raw">
+                        <td >
+                        </td>
+                        <td >
+                            <input class="btn btn-info" type="submit" value="确认提交" id="base_info_submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<!--<?php-->
+<!--var_dump($object);-->
+<!--?>-->
+<!--尾部-->
+<div class="end">
+    <hr/>
+    <div class="end_text">小毛果园-只为新鲜</div>
+    <hr/>
+</div>
+</body>
+<script type="text/javascript" src="__PUBLIC__/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script src="__JS__/user/base_info.js"></script>
+<script type="text/javascript" src="__JS__/public.js"></script>
+</html>

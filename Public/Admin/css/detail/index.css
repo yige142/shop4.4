@@ -1,0 +1,368 @@
+body{margin: auto;
+}
+/*--鼠标放松去图片放大效果
+div img{
+    cursor: pointer;
+    transition: all 0.6s;
+}
+div img:hover{
+    transform: scale(1.4);
+}
+*/
+
+
+/*头部大标签*/
+.top{
+    /*background-color: red;*/
+    height:152px;
+}
+
+/*头部第一行样式下方*/
+.top_header{
+    background-color: #eee;
+    line-height:31px;
+    height: 30px;
+}
+
+/*深圳-深夜达*/
+.top_header_left{
+    margin-left:200px ;
+    margin-top:8px;
+    color:#666666;
+    width:300px;
+    float: left;
+    clear: both;
+}
+
+/*登录--注册那一行UL*/
+.top_header_right{
+    float: right;
+    margin-right: 190px;
+}
+
+/*--导航分类区域下方--*/
+.top_content{
+    width:100%;
+    height:100px;
+}
+/*LOGO区域显示大小*/
+.navbar-header{
+    margin-left: 180px !important;
+    height:78px;
+    width:250px;
+
+}
+/*导航标签字段显示内容*/
+.navbar-nav{
+    margin-top:25px !important;
+
+}
+
+.vip{
+    padding-top: 3px;
+}
+.input-group{
+    margin-right: 180px !important;
+    margin-top:40px !important;
+    width:320px;
+
+}
+/*--导航分类区域上方--*/
+
+
+/*--商品循环显示下方--*/
+.good_fruit{
+    width:1300px;
+    height:645px;
+    margin:auto;
+
+}
+.good_fruit_label{
+    height:50px;
+}
+.good_fresh_label{
+    height:50px;
+}
+.good_fruit_png{
+    float: left;
+}
+.good_fresh_png{
+    float: left;
+}
+.good_fruit_more{
+    float: right;
+    padding-top: 14px;
+}
+.good_fresh_more{
+    float: right;
+    padding-top: 14px;
+}
+
+/*水果图片显示区域*/
+.good_fruit_Active_Area{
+    margin-top: 15px;
+    width: 255px;
+    height:260px;
+    /*background-color: #00b7ee;*/
+    float: left;
+
+}
+.good_fruit_img_scale{
+    width:250px;
+    height:200px;
+    overflow: hidden;
+}
+/*--图片放大有逐渐效果--*/
+.good_fruit_img{
+    transition: all 0.6s;
+}
+/*--图片放大倍数-*/
+.good_fruit_img:hover{
+    transform: scale(1.1);
+}
+
+/*水果显示名称,价格字体text颜色*/
+.good_fruit_name,.good_fruit_price{
+ color:#666666;
+}
+.good_fruit_name{
+    padding-top:5px;
+}
+
+/*定义水果显示字段靠左显示，方便后面的购物车图标挨着显示*/
+.good_fruit_text{
+    width:170px;
+    float: left;
+    clear: both;
+}
+/*购物车图片显示*/
+.good_fruit_png{
+    margin-left: 30px;
+    margin-top: 8px;
+}
+
+/*生鲜显示区域*/
+.good_fresh{
+    width:1300px;
+    height:645px;
+    margin:auto;
+    /*margin-left: 190px;*/
+}
+/*--商品循环显示上方--*/
+
+/*--尾部显示区域下方--*/
+.end{
+    width:1300px;
+    height:50px;
+    margin:auto;
+    /*margin-left: 190px;*/
+}
+.end_text{
+    text-align: center;
+}
+/*--尾部显示区域上方--*/
+a:link {
+    color: #666666;
+    text-decoration: none;
+}
+.list_inline{
+    list-style: none;
+}
+.list_inline>li{
+     float: right;
+     margin-left: 5px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+/*头部第一行样式上方*/
+
+/*crm index css样式下方*/
+a:focus {
+    outline : none;
+}
+.tree-title{
+    font-size:13.8px; !important;
+}
+
+.layout-north {
+    height: 80px;
+    background-color: #333;
+    overflow: hidden;
+}
+.layout-north .logo {
+    width: 300px;
+    height: 80px;
+    float: left;
+}
+.layout-north .info {
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    text-align: right;
+    padding: 0 20px 0 0;
+    color: #fff;
+    float: right;
+}
+
+.layout-west {
+    width: 180px;
+}
+
+.layout-center {
+    overflow: hidden;
+}
+
+.layout-south {
+    height: 30px;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+#tree {
+    margin: 10px 15px;
+}
+
+.tree-node-selected {
+    background:#999;
+    border-radius:4px;
+}
+.tree-node-hover {
+    border-radius:4px;
+}
+
+a.tabs-inner {
+    color:#666 !important;
+}
+
+.menu-active {
+    background: #999;
+    border: none;
+}
+
+.datagrid-row-selected {
+    background:#999 !important;
+}
+.easyui-dialog {
+    padding: 15px 0 0 0;
+}
+.panel-title {
+    font-size: 14px;
+    font-weight: normal;
+}
+.dialog-button .l-btn-large .l-btn-text {
+    font-size: 14px;
+    padding: 0 10px 0 0;
+    height: 35px;
+    line-height: 35px;
+    color: #666;
+    margin-left: 32px !important;
+}
+.dialog-button .l-btn-small .l-btn-text {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+.textbox-text {
+    background-color: #fff;
+}
+.tooltip-content {
+    font-size: 14px !important;
+    color: #333;
+}
+.messager-body {
+    color: #666;
+    font-size: 14px;
+}
+.form-label {
+    padding: 5px 0;
+    font-size: 10px;
+    color: #666;
+}
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.form-table tr:hover {
+    background-color: #f3f3f3;
+}
+.form-table > tbody > tr > td {
+    padding: 5px 0;
+}
+.form-table td.label {
+    min-width: 100px;
+    text-align: right;
+    font-size:16px;
+    color: #666;
+}
+.form-table td.input {
+    width: 290px;
+    text-align: left;
+    font-size:14px;
+    color: #666;
+}
+.form-table .link {
+    font-size: 16px;
+    color: #06f;
+    position: relative;
+    top: 2px;
+    left: 5px;
+    cursor: pointer;
+}
+.form-table .textarea{
+    width: 91%;
+    height: 150px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    resize: none;
+    padding: 10px;
+}
+.details-table {
+    width: 98%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+.details-table tr:nth-child(2n) {
+    background-color: #fafafa;
+}
+.details-table tr:hover {
+    background-color: #eee;
+}
+.details-table td {
+    padding: 8px 0;
+    border: 1px solid #ccc;
+}
+.details-table td.label {
+    min-width: 100px;
+    text-align: right;
+    font-size:14px;
+    color: #666;
+}
+.details-table td.content {
+    padding: 0 0 0 5px;
+    width: 290px;
+    text-align: left;
+    font-size:14px;
+    color: #666;
+}
+.tool-opt {
+    margin: 0 0 5px 0;
+}
+.tool-search {
+    padding: 0 0 0 7px;
+}
+.combobox-item,.combo input {
+    cursor: pointer;
+}
+.more {
+    display: none;
+    padding: 5px 0 0 58px;
+}
+/*crm index css样式上方*/
+
+

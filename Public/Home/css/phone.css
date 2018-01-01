@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*定义字体大小比率*/
+html{
+    font-size:62.5%;  /* 1rem=10px */
+}
+
+img{
+    max-width: 100%;
+    border: 0;
+    /*background-color: #00ee00;*/
+}
+#phone_contain{
+    width: 100%;
+}
+/*星夜达隐藏*/
+.top_header{
+    display: none;
+}
+
+.top_content{
+    width: 100%;
+    /*background-color: #00a2d4;*/
+}
+
+.container-fluid{
+    width: 100%;
+}
+/*logo图片区域*/
+.navbar-header{
+    background-color: #fff;
+    height: auto;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+.navbar-brand{
+    width: 100%;
+}
+/*logo图片居中*/
+.phone_img{
+    margin-top: -3%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 150%;
+    max-width: 150%;
+}
+
+/*轮播图片区域*/
+#myCarousel{
+    margin-top: -2%;
+    background-color: #0e0e0e;
+}
+/*轮播图片中 的小点点隐藏*/
+.carousel-indicators{
+    display: none;
+}
+/*首页，水果，生鲜 隐藏*/
+.daohang{
+    display: none;
+}
+
+/*商品循环显示*/
+/*全球鲜果 字体*/
+.good_fruit_label{
+    margin-top: -2% ;
+    width: 100%;
+    height: 35px;
+    /*background-color: #002a80;*/
+}
+.good_fruit_png{
+    float: left;
+    width: 45%;
+    clear: both;
+}
+/*更多  字体网上浮动2.5rem*/
+.good_fruit_more{
+    float: right;
+    margin-top: -4%;
+    font-size: 1.0rem;
+    clear: both;
+
+}
+.good_fruit_more a{
+    color: #555555;
+}
+
+/*商品图片显示*/
+
+.good_fruit{
+    width:100%;
+    height:auto;
+    margin:auto;
+    overflow: hidden;
+
+}
+/*商品循环显示*/
+.good_fruit_Active_Area{
+    /*background-color: #00bbee;*/
+    /*margin-top: 15px;*/
+    width: 18%;
+    height:25%;
+    margin: 0rem 0.2rem 0.2rem 0.2rem;
+    /*background-color: #00b7ee;*/
+    float: left;
+    clear: right;
+}
+/*!*定义水果显示字段靠左显示，方便后面的购物车图标挨着显示*!*/
+.good_fruit_text{
+    width:70%;
+    float: left;
+    clear: right;
+    font-size: 0.4rem;
+}
+
+.good_fruit_cart_png{
+    float: right;
+    text-align: center;
+    width: 20%;
+}
+
+/*生鲜显示*/
+.good_fresh{
+    width:100%;
+    height:auto;
+    margin-top:-5%;
+    overflow: hidden;
+    /*background-color: #dbdbdb;*/
+
+}
+.good_fresh_label{
+    height: 50px;
+    /*background-color: #00ee00;*/
+}
+.good_fresh_png{
+    width: 45%;
+    /*background-color: #0f0f0f;*/
+    float: left;
+}
+.good_fresh_more{
+    float: right;
+    margin-top: -4%;
+    font-size: 1.0rem;
+    clear: both;
+
+}
+.good_fresh_more a{
+    color: #555555;
+}
+
+/*--尾部显示区域下方--*/
+.end{
+    width:auto;
+    height:50px;
+    margin:auto;
+    /*margin-left: 190px;*/
+}
+.end_text{
+    text-align: center;
+}
+.good_fresh_cart_png{
+    float: right;
+    text-align: center;
+    width: 20%;
+}
+.good_fruit_img{
+    width: 100%;
+    height:100%;
+}
+
+#phone_order{
+    display: block; position: fixed; bottom: 0px; z-index: 99999;
+
+    text-align: center;
+    width: 100%;
+    height:70px;
+    background-color: #fff;
+
+}
+
+#phone_order ul{
+    /*background-color:#0E2D5F;*/
+}
+#phone_order ul li{
+    float: left;
+}
+#phone_order ul li a {
+    color: #b04446;
+
+}
+.chen{
+    height: 100px;
+}
+
+

@@ -1,0 +1,295 @@
+<?php if (!defined('THINK_PATH')) exit();?><!--Firefox火狐浏览器渲染遮罩专用-->
+<div class="tabs-loading">Loading...</div>
+<link rel="stylesheet" type="text/css" href="/shop4.2/Public/Admin/css/goods/goods.css" />
+<link rel="stylesheet" type="text/css" href="/shop4.2/Public/webuploader/0.1.5/webuploader.css" />
+
+
+
+<!--<link rel="stylesheet" type="text/css" href="/shop4.2/Public/webuploader/css/up.css" />-->
+<!-- 数据表显示-->
+<table id="goods"></table>
+<!--工具条-->
+<form id="goods-tool" style="padding: 5px;">
+    <div class="tool-opt">
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-add" onclick="goodsOpt.add()">新增</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-edit" onclick="goodsOpt.edit()">编辑</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-remove" onclick="goodsOpt.remove()">删除</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-reload" onclick="goodsOpt.reload()">刷新表</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-redo" onclick="goodsOpt.redo()">取消选定</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-undo" onclick="goodsOpt.reset()">重置查询</a>
+    </div>
+
+    <div class="tool-search">
+        <label for="goods-search-keywords">关键字：</label>
+        <input type="text" id="goods-search-keywords">
+        <input type="text" id="goods-search-type">
+        <!--<input type="text" id="user-search-state">-->
+        <!--&lt;!&ndash;<input type="text" id="user-search-date-type">&ndash;&gt;-->
+        <!--<input type="text" id="user-search-date-from">-->
+        <!--<label for="user-search-date-to">-</label>-->
+        <!--<input type="text" id="user-search-date-to">-->
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-search" onclick="goodsOpt.search()">查询</a>
+    </div>
+
+</form>
+
+<!--新增面板-->
+<form id="goods_add">
+    <table class="form-table" style="max-width: 880px;">
+        <tbody>
+           <tr>
+               <td class="label">
+                   <label for="goods_add_sn">商品编号：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="goods_add_sn">
+               </td>
+               <td rowspan="6" valign="top" >
+                   <div style="margin-left:85px">
+                       <p><input type="file" name="file" id="file"></p>
+                       <img id="img" src="/shop4.2/Public/Admin/img/default.png" width="170" height="150" border="0" />
+                        <input type="hidden" id="image_path"><input type="hidden" id="thumb_path">
+                   </div>
+               </td>
+           </tr>
+           <tr>
+               <td class="label">
+                   <label for="goods_add_name">商品名称：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="goods_add_name">
+               </td>
+           </tr>
+           <tr>
+               <td class="label">
+                   <label for="goods_carriage">运费价格：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="goods_carriage">
+               </td>
+           </tr>
+           <tr>
+               <td class="label">
+                   <label for="goods_shop_price">店铺价格：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="goods_shop_price">
+               </td>
+           </tr>
+           <tr>
+               <td class="label">
+                   <label for="goods_stork">商品库存：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="goods_stork">
+               </td>
+           </tr>
+           <tr>
+               <td class="label">
+                   <label for="unit">单位：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="unit">
+               </td>
+           </tr>
+           <tr>
+               <td class="label">
+                   <label for="goods_info">商品信息：</label>
+               </td>
+               <td  colspan="4">
+                   <textarea  id="goods_info"  ></textarea>
+               </td>
+           </tr>
+           <tr>
+               <td class="label">
+                   <label for="goods_classify">商品分类：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="goods_classify">
+               </td>
+               <td class="label">
+                   <label for="goods_status">商品状态：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="goods_status">
+               </td>
+           </tr>
+           <tr>
+               <td class="label">
+                   <label for="goods_recommend">推荐商品：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="goods_recommend">
+               </td>
+               <td class="label">
+                   <label for="goods_competitive">设置精品：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="goods_competitive">
+               </td>
+           </tr>
+           <tr>
+               <td class="label">
+                   <label for="goods_new_product">设置新品：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="goods_new_product">
+               </td>
+               <td class="label">
+                   <label for="goods_hot_cakes">设置热销：</label>
+               </td>
+               <td class="input">
+                   <input type="text" id="goods_hot_cakes">
+               </td>
+           </tr>
+
+           <tr>
+               <td class="label">
+                   <label for="goods_describe">商品描述：</label>
+               </td>
+               <td colspan="4">
+                   <textarea  id="goods_describe" class="textarea" ></textarea>
+               </td>
+
+           </tr>
+        </tbody>
+    </table>
+</form>
+
+<!--修改面板-->
+<form id="goods_edit">
+    <table class="form-table" style="max-width: 880px;">
+        <input type="hidden" id="goodsId" name="goodsId">
+        <tbody>
+        <tr>
+            <td class="label">
+                <label for="goods_edit_sn">商品编号：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="goods_edit_sn" name="goods_sn">
+            </td>
+            <td rowspan="6" valign="top" >
+                <div style="margin-left:85px">
+                    <p><input type="file" name="file" id="edit_file"></p>
+                    <img id="edit_img" src="/shop4.2/Public/Admin/img/default.png" width="170" height="150" border="0" />
+                    images: <input type="hidden" id="image_edit_path" name="img_path"><input type="hidden" id="thumb_edit_path" name="thumb_path">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <label for="goods_edit_name">商品名称：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="goods_edit_name" name="goods_name">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <label for="edit_carriage">运费：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="edit_carriage" name="carriage">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <label for="edit_shop_price">店铺价格：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="edit_shop_price" name="shop_price">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <label for="goods_edit_stork">商品库存：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="goods_edit_stork" name="goods_stock">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <label for="edit_unit">单位：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="edit_unit" name="goods_unit">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <label for="goods_edit_info">商品信息：</label>
+            </td>
+            <td  colspan="4">
+                <textarea   id="goods_edit_info"  name="goods_info" style="width: 91%;
+    height: 75px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    resize: none;
+    padding: 10px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <label for="goods_edit_classify">商品分类：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="goods_edit_classify" name="goods_classify">
+            </td>
+            <td class="label">
+                <label for="goods_edit_status">商品状态：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="goods_edit_status" name="goods_status">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <label for="goods_edit_recommend">推荐商品：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="goods_edit_recommend" name="goods_recommend">
+            </td>
+            <td class="label">
+                <label for="goods_edit_competitive">设置精品：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="goods_edit_competitive" name="goods_competitive">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <label for="edit_new_product">设置新品：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="edit_new_product" name="new_product">
+            </td>
+            <td class="label">
+                <label for="edit_hot_cakes">设置热销：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="edit_hot_cakes" name="hot_cakes">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label">
+                <label for="goods_edit_describe">商品描述：</label>
+            </td>
+            <td colspan="4">
+                <textarea  id="goods_edit_describe" class="textarea" ></textarea>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+
+
+
+<script type="text/javascript" src="/shop4.2/Public/kindeditor/kindeditor-min.js"></script>
+<script type="text/javascript" src="/shop4.2/Public/kindeditor/lang/zh_CN.js"></script>
+<script type="text/javascript" src="/shop4.2/Public/Admin/js/goods/datagrid-detailview.js"></script>
+<script type="text/javascript" src="/shop4.2/Public/uploadify/jquery.uploadify.js"></script>
+<script type="text/javascript" src="/shop4.2/Public/Admin/js/goods/goods.js"></script>
+<!--<script type="text/javascript" src="/shop4.2/Public/Admin/js/goods/goods_edit.js"></script>-->

@@ -1,0 +1,28 @@
+.main_title{
+    padding-top: 10px;
+    hight:60px;
+    width: auto;
+    font-size: 16px;
+    margin-bottom: 20px;
+    /*background-color: #00b7ee;*/
+}
+.table_raw{
+    margin-bottom:60px;
+    height: 40px;
+}
+.btn{
+    margin-left: 60px;
+}
+.datagrid-wrap{
+    height:250px !important;
+}
+
+.panel-title {
+    font-size: 14px !important;
+    color: inherit;
+}
+.form-label {
+    padding: 8px ;
+    /*font-size: 14px;*/
+    /*color: #666;*/
+}

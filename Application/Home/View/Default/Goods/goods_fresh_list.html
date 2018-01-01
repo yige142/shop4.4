@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<block name="head">
+    <head>
+        <meta charset="UTF-8">
+        <title>商城首页</title>
+        <link href="__CSS__/index.css" rel="stylesheet" type="text/css">
+        <link href="__CSS__/goods/fresh_list.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="__PUBLIC__/easyui/themes/bootstrap/easyui.css">
+        <link rel="stylesheet" href="__PUBLIC__/easyui/themes/icon.css">
+        <!--加载Bootstrap的CSS   __PUBLIC__在Home->Config中配置-->
+        <link href="__PUBLIC__/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <script src="__JS__/jquery-3.2.1.min.js"></script>
+        <script src="__PUBLIC__/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript">
+            var ThinkPhP={
+                'MODULE':'__MODULE__',
+                'IMG':'__IMG__',
+                'INDEX':'{:U("Index/index")}'
+            };
+        </script>
+    </head>
+</block>
+<body>
+<block name="top">
+    <!--头部 显示标题-->
+    <div class="top">
+        <div class="top_header">
+            <div class="top_header_left glyphicon glyphicon-plane">深圳-满百包邮(环郊内)-星夜达
+            </div>
+
+            <if condition="session('admin')">
+                <div class="top_header_right">
+                    <ul class="list_inline">
+                        <li><a href="{:U('Index/logout')}">[退出]</a></li>
+                        <li>您好:<a href="{:U('Order/order')}">{:session('admin')['accounts']}</a></li>
+                    </ul>
+                </div>
+                <else />
+                <div class="top_header_right">
+                    <ul class="list_inline">
+                        <li><a href="{:U('Index/login')}">[登录]</a></li>
+                    </ul>
+                </div>
+            </if>
+
+
+
+        </div>
+        <!--导航分类-->
+        <div class="top_content">
+            <nav class="navbar " role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="__IMG__/logo3.png"></a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li ><a href="{:U('Index/index')}" ><h4 class="glyphicon glyphicon-home">首页</h4></a></li>
+                            <li><a href="{:U('Goods/goods_fruit_list')}"><h4 class="glyphicon glyphicon-tree-deciduous">鲜果</h4></a></li>
+                            <li ><a href="{:U('Goods/goods_fresh_list')}"><h4 class="glyphicon glyphicon-cutlery">生鲜</h4></a></li>
+                            <li><a href="javascript:void(0)" id="gift"><h4 class="glyphicon glyphicon-heart-empty">礼品</h4></a></li>
+                            <li><a href="javascript:void(0)" id="vip"><h4 class="vip">VIP会员中心</h4></a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-right">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+					<span class="input-group-btn">
+						<button class="btn btn-info " type="button">
+                            <span class="glyphicon glyphicon-search"></span> 搜索
+                        </button>
+					</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</block>
+
+
+
+
+<!--<?php-->
+<!--var_dump($list);-->
+<!--print_r($Goods);-->
+<!--?>-->
+<!--显示商品生鲜部分 -->
+<div class="good_fresh">
+    <hr/>
+    <div class="good_fresh_label">
+        <div class="good_fresh_png"><img src="__IMG__/fresh.png"></div>
+    </div>
+    <!--显示生鲜图片区域-->
+    <div class="good_fruit_list">
+        <volist name="list" id="vo">
+            <if condition="$vo.goods_classify eq '生鲜' and $vo.goods_status eq '上架'">
+                <div class="good_fruit_Active_Area">
+                    <div class="good_fruit_img_scale">
+                        <a href="{:U('Goods/getGoodsDetails')}?id={$vo.goodsId}" target="_blank"><img class="good_fruit_img" src="__ROOT__/Uploads/{$vo.img_path}"></a>
+                    </div>
+                    <div class="good_fruit_text">
+                        <div class="good_fruit_name">{$vo.goods_name}</div>
+                        <div class="good_fruit_price">￥{$vo.shop_price}/{$vo.goods_unit}</div>
+                    </div>
+                    <div class="good_fruit_png">
+                        <a href="{:U('Goods/getGoodsDetails')}?id={$vo.goodsId}" target="_blank"><img  src="__IMG__/shopping_cart.png"></a>
+                    </div>
+                </div>
+
+            </if>
+
+        </volist>
+    </div>
+
+    <div class="paging">
+        <ul class="pagination">
+            <li value="-1"><a href="javascript:void(0)">&laquo;</a></li>
+            <li value="1"><a href="javascript:void(0)">1</a></li>
+            <li value="2"><a href="javascript:void(0)">2</a></li>
+            <li value="3"><a href="javascript:void(0)">3</a></li>
+            <li value="4"><a href="javascript:void(0)">4</a></li>
+            <li value="5"><a href="javascript:void(0)">5</a></li>
+            <li value="6"><a href="javascript:void(0)">&raquo;</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--尾部-->
+<div class="end">
+    <hr/>
+    <div class="end_text">小毛果园-只为新鲜</div>
+    <hr/>
+</div>
+</body>
+<script type="text/javascript" src="__PUBLIC__/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="__JS__/index.js"></script>
+<script type="text/javascript" src="__JS__/public.js"></script>
+<script>
+    $(".pagination li").click(function() {
+        $(this).siblings('li').removeClass('active');  // 删除其他兄弟元素的样式
+        $(this).addClass('active');                            // 添加当前元素的样式
+
+        location.href=ThinkPhP['MODULE']+'/Goods/page_fresh_list?page='+$(this).val();
+    });
+</script>
+</html>

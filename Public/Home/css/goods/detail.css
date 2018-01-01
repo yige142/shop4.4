@@ -1,0 +1,157 @@
+
+
+.shop-contain{
+    width: 1300px;
+    height:470px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    /*background-color:#c4e3f3;*/
+}
+
+.shop-goods-detail{
+    width: 1050px;
+    height:425px;
+    /*background-color: #8a6d3b;*/
+    float: left;
+    clear: right;
+}
+
+.detail-left{
+    float: left;
+    margin-left: 15px;
+    width:420px;
+    height:420px;
+    clear: right;
+    /*background-color: #0092DC;*/
+}
+.detail-right{
+    float: left;
+    margin-left: 6px;
+    width:600px;
+    height:420px;
+    /*background-color: #ffffff;*/
+}
+.see-again{
+    float: left;
+    width:250px;
+    height:450px;
+    /*background-color: #0e0e0e;*/
+}
+
+
+/*表格样式*/
+.goods-des-tab{
+    margin-left: 32px;
+}
+
+/*商品名称*/
+/*.des-title{*/
+    /*font-size: 20px;*/
+    /*font-weight: bold;*/
+/*}*/
+
+
+/*商品说明*/
+.goods-info{
+    color: #999999;
+}
+
+/*价格*/
+.des-chux{
+    width:550px;
+    height:50px;
+    color: #999999;
+    background-color: #fef4e8;
+}
+.jiage{
+    font-size: 15px;
+    padding-top: 8px;
+    margin-left: 5px;
+}
+.shop-price{
+    font-size: 26px;
+    color: red;
+    font-weight: bold
+}
+
+/*配送地址*/
+.des-title-span{
+    color: #999999;
+   height: 32px;
+   margin-top: 12px;
+}
+/*运费*/
+.transportation_expenses{
+    color: #999999;
+
+}
+/*服务*/
+.serve{
+    color: #999999;
+    margin-top: 12px;
+}
+/*购买数量*/
+.quantity{
+    color: #999999;
+    margin-top: 12px;
+}
+/*购买按钮图标*/
+.car_button{
+    width: 550px;
+    /*background-color: #00ee00;*/
+    height: 140px;
+}
+/*按钮图片*/
+.car_button_img{
+    margin-top: 70px;
+    margin-left: 180px;
+    /*图片放大有逐渐效果*/
+    transition: all 0.6s;
+
+}
+/*--按钮图片放大倍数-*/
+.car_button_img:hover{
+    transform: scale(1.1);
+}
+
+/*商品评论字段样式*/
+
+.active{
+
+    color: #ffffff;
+}
+
+/*图片显示区域*/
+#show_img{
+    width:420px;
+    height: 420px;
+    overflow: hidden;
+}
+/*购买字段样式调整*/
+.textbox .textbox-text{
+    font-size: 18px !important;
+    padding-left: 50px !important; ;
+}
+
+
+/*评论区域*/
+.shop-goods-comment{
+    width: 1300px;
+    height:auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    /*background-color:#1f637b;*/
+}
+/*评论区域的UL部分*/
+.goods-comment-area{
+    width: 1060px;
+    height:41px;
+    /*background-color: #00b7ee;*/
+}
+/*商品详情显示*/
+.goods-info-area{
+    height:auto;
+    width: 1055px;
+    /*background-color: #00ee00;*/
+}

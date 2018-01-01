@@ -1,0 +1,2296 @@
+[ 2017-12-10T00:01:24+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=13638
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005860s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0088s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0029s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.231445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.233399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2017-12-10T00:01:51+08:00 ] ::1 /shop4.2/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2017-12-10T00:01:55+08:00 ] ::1 /shop4.2/Home/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0273s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `id`,`accounts`,`state` FROM `shop_user` WHERE `accounts` = 'zxzx' AND `password` = '601f1889667efaebb33b8c12572835da3f027f78' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shop_user` SET `last_login_time`='2017-12-10 00:01:55',`last_login_ip`='0.0.0.0',`login_count`=login_count+1 WHERE `id` = 13 [ RunTime:0.0293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T00:01:56+08:00 ] ::1 /shop4.2/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.227539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.228516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:01:58+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2017-12-10T00:01:59+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0078s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:04:05+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=10128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010742s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0098s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0029s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004883s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.255859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.257812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017579s ]
+
+[ 2017-12-10T00:04:28+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2017-12-10T00:04:28+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0078s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '2' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '2' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:06:11+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=12401
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0088s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0098s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.247071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.255859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T00:06:17+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:06:18+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '2' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '2' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-12-10T00:06:22+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '2' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '2' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:06:23+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0078s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '2' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '2' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:06:54+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '2' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '2' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:07:46+08:00 ] ::1 /shop4.2/order/order?XDEBUG_SESSION_START=19724
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:07:47+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '2' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '2' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:07:59+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '2' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '2' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T00:08:01+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0078s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '2' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '2' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:08:03+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '2' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '2' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:08:20+08:00 ] ::1 /shop4.2/Home/Order/cancel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0078s ]
+SQL: UPDATE `shop_order` SET `order_status`='已取消' WHERE `orderId` = 95 [ RunTime:0.0596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T00:08:20+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0078s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '2' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '2' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-12-10T00:11:54+08:00 ] ::1 /shop4.2/order/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T00:11:55+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0088s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '2' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '2' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T00:14:49+08:00 ] ::1 /shop4.2/Home/Controller/OrderController.class.php?XDEBUG_SESSION_START=13932
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005859s ]
+ERR: 无法加载控制器:Controller
+
+[ 2017-12-10T00:21:22+08:00 ] 127.0.0.1 /shop4.2/Order/order?XDEBUG_SESSION_START=11154
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T00:23:03+08:00 ] 127.0.0.1 /shop4.2/Order/order?XDEBUG_SESSION_START=12764
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T00:29:06+08:00 ] 127.0.0.1 /shop4.2/login/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+ERR: 模板不存在:./Application/Home/View/Default/Login/index.html
+
+[ 2017-12-10T00:29:50+08:00 ] ::1 /shop4.2/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.224610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.226562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2017-12-10T00:30:28+08:00 ] ::1 /shop4.2/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:30:31+08:00 ] ::1 /shop4.2/Index/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\b078c39660146fadcd953bf4591327d3.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.220703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.222656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:30:36+08:00 ] 127.0.0.1 /shop4.2/login/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+ERR: 模板不存在:./Application/Home/View/Default/Login/index.html
+
+[ 2017-12-10T00:30:55+08:00 ] 127.0.0.1 /shop4.2/login/index?XDEBUG_SESSION_START=16367
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+ERR: 模板不存在:./Application/Home/View/Default/Login/index.html
+
+[ 2017-12-10T00:31:20+08:00 ] 127.0.0.1 /shop4.2/?XDEBUG_SESSION_START=10073
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.222656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.224609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T00:32:10+08:00 ] ::1 /shop4.2/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T00:32:36+08:00 ] ::1 /shop4.2/Home/Login/checkUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `id`,`accounts`,`state` FROM `shop_user` WHERE `accounts` = 'zxzx' AND `password` = '601f1889667efaebb33b8c12572835da3f027f78' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `shop_user` SET `last_login_time`='2017-12-10 00:32:36',`last_login_ip`='0.0.0.0',`login_count`=login_count+1 WHERE `id` = 13 [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-12-10T00:32:40+08:00 ] ::1 /shop4.2/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.226562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.228516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009766s ]
+
+[ 2017-12-10T00:32:45+08:00 ] 127.0.0.1 /shop4.2/?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0078s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.210938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.211914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T00:33:17+08:00 ] ::1 /shop4.2/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.223633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.225586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T00:33:29+08:00 ] 127.0.0.1 /shop4.2/?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0059s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001954s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.197265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.199219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:33:32+08:00 ] 127.0.0.1 /shop4.2/?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0078s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.194336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.196289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T00:33:53+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2017-12-10T00:33:55+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0059s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:34:03+08:00 ] 127.0.0.1 /shop4.2/?XDEBUG_SESSION_START=14592
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.218750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.220703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:34:56+08:00 ] 127.0.0.1 /shop4.2/?XDEBUG_SESSION_START=18921
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.221680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.223633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:35:10+08:00 ] ::1 /shop4.2/User/shipping_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:35:12+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:35:31+08:00 ] ::1 /shop4.2/Home/Address/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shop_address` (`uid`,`name`,`phone`,`address`,`tab`) VALUES ('13','545','55555555555','kjl','非默认') [ RunTime:0.0352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:35:33+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:35:43+08:00 ] 127.0.0.1 /shop4.2/?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0088s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.208008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.209961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:36:30+08:00 ] 127.0.0.1 /shop4.2/?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0068s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0000s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0000s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.193359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.194336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T00:36:42+08:00 ] ::1 /shop4.2/Home/Address/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+SQL: DELETE FROM `shop_address` WHERE `id` = 18 [ RunTime:0.0313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T00:39:39+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-12-10T00:47:20+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=11170
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0137s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.251953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.253906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T00:47:33+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2017-12-10T00:47:33+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0107s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:47:37+08:00 ] ::1 /shop4.2/User/shipping_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T00:47:38+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:48:39+08:00 ] ::1 /shop4.2/Home/Address/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shop_address` (`uid`,`name`,`phone`,`address`,`tab`) VALUES ('13','fdsfdsf','12312312312','fdsfd','非默认') [ RunTime:0.0557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2017-12-10T00:48:41+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:48:48+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=17227
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0117s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0029s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004882s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.257813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.259765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2017-12-10T00:49:40+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006835s ]
+
+[ 2017-12-10T00:49:41+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0098s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:49:45+08:00 ] ::1 /shop4.2/User/shipping_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:49:45+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:49:49+08:00 ] ::1 /shop4.2/Home/Address/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+SQL: DELETE FROM `shop_address` WHERE `id` = 19 [ RunTime:0.0381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T00:49:49+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T00:49:52+08:00 ] ::1 /shop4.2/Home/Address/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0059s ]
+SQL: DELETE FROM `shop_address` WHERE `id` = 16 [ RunTime:0.0430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T00:49:53+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T00:50:03+08:00 ] ::1 /shop4.2/Home/Address/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shop_address` (`uid`,`name`,`phone`,`address`,`tab`) VALUES ('13','123456','3211321321321','kk','非默认') [ RunTime:0.0420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T00:50:03+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:50:23+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=19054
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0127s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0029s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.226563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.228515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T00:50:32+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2017-12-10T00:50:32+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0029s ]
+
+[ 2017-12-10T00:50:35+08:00 ] ::1 /shop4.2/User/shipping_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T00:50:35+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0107s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:55:25+08:00 ] ::1 /shop4.2/Home/Address/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shop_address` (`uid`,`name`,`phone`,`address`,`tab`) VALUES ('13','jj','123132123132',';;','非默认') [ RunTime:0.1846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:66.307617s ]
+
+[ 2017-12-10T00:56:45+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=18055
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.005859s ]
+INFO: [ app_init ] --END-- [ RunTime:0.056640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0088s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.231446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.233398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2017-12-10T00:57:00+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:57:00+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0078s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:57:02+08:00 ] ::1 /shop4.2/User/shipping_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006836s ]
+
+[ 2017-12-10T00:57:02+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:57:10+08:00 ] ::1 /shop4.2/Home/Address/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shop_address` (`uid`,`name`,`phone`,`address`,`tab`) VALUES ('13','fff','123123123123','123123','非默认') [ RunTime:0.0293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T00:57:11+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0029s ]
+
+[ 2017-12-10T00:57:23+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=16611
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0146s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001954s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004883s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.241211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.242187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2017-12-10T00:57:33+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T00:57:33+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T00:57:34+08:00 ] ::1 /shop4.2/User/shipping_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007812s ]
+
+[ 2017-12-10T00:57:35+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:57:41+08:00 ] ::1 /shop4.2/Home/Address/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shop_address` (`uid`,`name`,`phone`,`address`,`tab`) VALUES ('13','dsfsdf','12312321123123','123123123','非默认') [ RunTime:0.0430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T00:57:41+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T00:58:25+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=12842
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0137s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0068s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0039s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.250976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.252930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T00:58:27+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2017-12-10T00:58:28+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T00:58:32+08:00 ] ::1 /shop4.2/User/shipping_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T00:58:32+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:00:20+08:00 ] ::1 /shop4.2/Home/Address/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shop_address` (`uid`,`name`,`phone`,`address`,`tab`) VALUES ('13','123123','123123123123','ff','非默认') [ RunTime:0.0479s ]
+
+[ 2017-12-10T01:00:23+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:01:05+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=19389
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006836s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0088s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0029s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.269531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.272461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T01:01:09+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T01:01:09+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0078s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:01:11+08:00 ] ::1 /shop4.2/User/shipping_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001953s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T01:01:12+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T01:02:54+08:00 ] ::1 /shop4.2/Home/Address/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shop_address` (`uid`,`name`,`phone`,`address`,`tab`) VALUES ('13','fsdfd','123123123123','fdfff','非默认') [ RunTime:0.0430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T01:02:54+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0107s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-12-10T01:03:00+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=12592
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0098s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0029s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.246094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.248047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T01:03:10+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2017-12-10T01:03:11+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T01:03:12+08:00 ] ::1 /shop4.2/User/shipping_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T01:03:13+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:04:25+08:00 ] ::1 /shop4.2/Home/Address/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shop_address` (`uid`,`name`,`phone`,`address`,`tab`) VALUES ('13','12312312','12312321123123','ffdsf','非默认') [ RunTime:0.0391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T01:04:25+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:04:50+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=16140
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0117s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.235351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.236328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005859s ]
+
+[ 2017-12-10T01:04:52+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004882s ]
+
+[ 2017-12-10T01:04:53+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0068s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T01:04:55+08:00 ] ::1 /shop4.2/User/shipping_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T01:04:55+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:04:58+08:00 ] ::1 /shop4.2/Home/Address/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+SQL: DELETE FROM `shop_address` WHERE `id` = 22 [ RunTime:0.0420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T01:04:58+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:05:01+08:00 ] ::1 /shop4.2/Home/Address/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+SQL: DELETE FROM `shop_address` WHERE `id` = 26 [ RunTime:0.0303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T01:05:01+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T01:05:03+08:00 ] ::1 /shop4.2/Home/Address/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: DELETE FROM `shop_address` WHERE `id` = 25 [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T01:05:03+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0107s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T01:05:05+08:00 ] ::1 /shop4.2/Home/Address/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+SQL: DELETE FROM `shop_address` WHERE `id` = 24 [ RunTime:0.0459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T01:05:05+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:06:07+08:00 ] ::1 /shop4.2/Home/Address/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shop_address` (`uid`,`name`,`phone`,`address`,`tab`) VALUES ('13','123qqqqqq','123123123211','dff','非默认') [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T01:06:07+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:06:24+08:00 ] ::1 /shop4.2/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0098s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.244141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.246094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T01:07:12+08:00 ] ::1 /shop4.2/?XDEBUG_SESSION_START=13244
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0088s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0020s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0029s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string D:\WampServer\wamp\www\shop4.2\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002929s ]
+NOTIC: [8] Undefined variable: Goods D:\WampServer\wamp\www\shop4.2\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.237305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.239257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-12-10T01:07:16+08:00 ] ::1 /shop4.2/Order/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2017-12-10T01:07:17+08:00 ] ::1 /shop4.2/Home/Order/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0088s ]
+SQL: SELECT shop_order.orderId,shop_order.user_id,shop_order.order_name,shop_order.orderSn,shop_order.create_time,shop_order.unit_price,shop_order.number,shop_order.total_price,shop_order.pay_status,shop_order.order_status,shop_order.order_cancel,shop_goods.goodsId,shop_goods.goods_name,shop_goods.goods_info,shop_goods.thumb_path FROM `shop_order` LEFT JOIN shop_goods ON shop_order.goods_id=shop_goods.goodsId  WHERE shop_order.user_id = '13' ORDER BY `create_time` DESC LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE shop_order.user_id = '13' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:07:18+08:00 ] ::1 /shop4.2/User/shipping_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001953s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003907s ]
+
+[ 2017-12-10T01:07:19+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T01:09:27+08:00 ] ::1 /shop4.2/Home/Address/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: validate D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WampServer\wamp\www\shop4.2\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `shop_address` (`uid`,`name`,`phone`,`address`,`tab`) VALUES ('13','12312','123123123123','123123123','非默认') [ RunTime:0.0283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2017-12-10T01:09:28+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:19:18+08:00 ] ::1 /shop4.2/Home/Address/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+SQL: DELETE FROM `shop_address` WHERE `id` = 28 [ RunTime:0.0381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T01:19:19+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:19:21+08:00 ] ::1 /shop4.2/Home/Address/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0059s ]
+SQL: DELETE FROM `shop_address` WHERE `id` = 27 [ RunTime:0.0381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T01:19:21+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-12-10T01:19:23+08:00 ] ::1 /shop4.2/Home/Address/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0068s ]
+SQL: DELETE FROM `shop_address` WHERE `id` = 23 [ RunTime:0.0283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T01:19:23+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0107s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-10T01:19:26+08:00 ] ::1 /shop4.2/Home/Address/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: DELETE FROM `shop_address` WHERE `id` = 21 [ RunTime:0.0342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2017-12-10T01:19:26+08:00 ] ::1 /shop4.2/Home/Address/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `shop_address` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`uid`,`name`,`phone`,`address`,`tab`,`create_time` FROM `shop_address` WHERE `uid` = 13 ORDER BY `create_time` DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_address` WHERE `uid` = 13 LIMIT 1   [ RunTime:0.0010s ]
+

@@ -1,0 +1,15 @@
+.main_title{
+    padding-top: 10px;
+    hight:60px;
+    width: auto;
+    font-size: 16px;
+    margin-bottom: 20px;
+    /*background-color: #00b7ee;*/
+}
+.table_raw{
+    margin-bottom:60px;
+    height: 40px;
+}
+.btn{
+    margin-left: 60px;
+}

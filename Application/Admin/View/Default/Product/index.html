@@ -1,0 +1,102 @@
+<!--Firefox火狐浏览器渲染遮罩专用-->
+<div class="tabs-loading">Loading...</div>
+<link rel="stylesheet" type="text/css" href="__WEBUPLOADER__/0.1.5/webuploader.css" />
+
+
+<!--<link rel="stylesheet" type="text/css" href="__WEBUPLOADER__/css/up.css" />-->
+<!-- 数据表显示-->
+<table id="product"></table>
+<!--工具条-->
+<form id="product-tool" style="padding: 5px;">
+    <div class="tool-opt">
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-add" onclick="productOpt.add()">新增</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-add" onclick="productOpt.addupl()">新增Upload</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-edit" onclick="productOpt.edit()">编辑</a>
+        <!--测试有权限的话显示该按钮，没权限则隐藏（测试可行）-->
+        <if condition="checkbutton('delete') eq 1 ">
+            <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-remove" onclick="productOpt.remove()">删除</a>
+            <else/>
+        </if>
+
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-reload" onclick="productOpt.reload()">刷新表</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-redo" onclick="productOpt.redo()">取消选定</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-undo" onclick="productOpt.reset()">重置查询</a>
+    </div>
+
+    <div class="tool-search">
+        <label for="user-search-keywords">关键字：</label>
+        <input type="text" id="user-search-keywords">
+        <!--<input type="text" id="user-search-state">-->
+        <!--&lt;!&ndash;<input type="text" id="user-search-date-type">&ndash;&gt;-->
+        <!--<input type="text" id="user-search-date-from">-->
+        <!--<label for="user-search-date-to">-</label>-->
+        <!--<input type="text" id="user-search-date-to">-->
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-search" onclick="userOpt.search()">查询</a>
+    </div>
+
+</form>
+
+<form id="product-add">
+    <table class="form-table" style="max-width: 420px;">
+        <tbody>
+        <tr>
+            <td class="label">
+                <label for="user-add-product_name" class="form-label">产品名称：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="user-add-product_name">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <label for="user-add-product_id" class="form-label">产品ID：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="user-add-product_id" value="2">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <div class="uploader-list-container">
+                    <div class="queueList">
+                        <div id="dndArea" class="placeholder">
+                            <div id="filePicker-2"></div>
+                            <p>或将照片拖到这里，单次最多可选300张</p>
+                        </div>
+                    </div>
+                    <div class="statusBar" style="display:none;">
+                        <div class="progress"> <span class="text">0%</span> <span class="percentage"></span> </div>
+                        <div class="info"></div>
+                        <div class="btns">
+                            <div id="filePicker2"></div>
+                            <div class="uploadBtn">开始上传</div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+
+        </tbody>
+    </table>
+</form>
+
+<!--测试uploadify上传-->
+<form id="product-addUpload">
+    <table class="form-table" style="max-width:500px;">
+        <tbody>
+         <p><input type="file" name="file" id="file">444</p>
+         <img id="img" src="http://www.thinkphp.cn/Public/new/img/header_logo.png" width="130" height="130" border="0" />
+       images: <input type="text" id="images">
+        </tbody>
+    </table>
+</form>
+
+<script type="text/javascript" src="__JS__/product.js"></script>
+<script type="text/javascript" src="__JS__/base.js"></script>
+<!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+<script type="text/javascript" src="__UPLOADIFY__/jquery.uploadify.js"></script>
+
+
+

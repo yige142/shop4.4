@@ -1,0 +1,52 @@
+[ 2017-11-24T09:55:03+08:00 ] 218.18.171.45 /shop3.6/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0029s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0006s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string C:\wampc\www\shop3.6\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0006s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string C:\wampc\www\shop3.6\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000541s ]
+NOTIC: [8] Undefined variable: Goods C:\wampc\www\shop3.6\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004634s ]
+
+[ 2017-11-24T15:42:42+08:00 ] 113.92.95.70 /shop3.6/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001620s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0136s ]
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` LIMIT 10   [ RunTime:0.0006s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string C:\wampc\www\shop3.6\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT `goodsId`,`goods_name`,`goods_sn`,`shop_price`,`goods_status`,`goods_unit`,`goods_classify`,`img_path`,`thumb_path`,`create_time` FROM `shop_goods` WHERE `goods_classify` = '生鲜' LIMIT 10   [ RunTime:0.0005s ]
+NOTIC: [4096] Object of class Home\Controller\IndexController could not be converted to string C:\wampc\www\shop3.6\Application\Home\Controller\IndexController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000527s ]
+NOTIC: [8] Undefined variable: Goods C:\wampc\www\shop3.6\Application\Runtime\Cache\Home\4ff1c5b8284f90a50fd957ef30c3e1de.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001620s ]
+

@@ -1,0 +1,43 @@
+<!--Firefox火狐浏览器渲染遮罩专用-->
+<div class="tabs-loading">Loading...</div>
+<table id="authgroup"></table>
+<from>
+<div id="authgroup_tool" style="padding:5px;">
+    <div style="margin-bottom:5px;">
+        <a href="javascript:void(0)" class="easyui-linkbutton" plain="false" iconCls="icon-add" onclick="authgroup_tool.add();">新增</a>
+    </div>
+    <div style="padding:0 0 0 7px;color:#333;">
+        查询角色：<input id="role" type="text" class="textbox" name="search_role_name" style="width:150px;height:22px">
+        创建时间从：<input id="dateTo" type="text" name="date_from" editable="false" class="easyui-datebox"  style="width:110px;">
+        到：<input id="dateFrom" type="text" name="date_to" editable="false" class="easyui-datebox"  style="width:110px;">
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-search" onclick="alert();">查询</a>
+    </div>
+</div>
+</from>
+<form id="authgroup_add" style="margin:0;padding:5px 0 0 25px;color:#333;">
+
+    <table class="form-table" style="max-width: 420px;">
+        <tbody>
+        <tr>
+            <td class="label">
+                <label for="add-role" class="form-label">角色名称：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="add-role">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <label for="add-auth_nav" class="form-label">权限分配：</label>
+            </td>
+            <td class="input">
+                <input type="text" id="add-auth_nav">
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</form>
+
+
+<script type="text/javascript" src="__JS__/authgroup.js"></script>
