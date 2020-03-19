@@ -1,4 +1,4 @@
 # shop
-thinkphp3.2
-mysql5.6
+thinkphp3.2<br>
+mysql5.6<br>
 easyui1.4.5
